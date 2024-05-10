@@ -106,9 +106,7 @@ public class HiveCatalogOperations implements CatalogOperations, SupportsSchemas
   public static final Map<String, String> GRAVITINO_CONFIG_TO_HIVE =
       ImmutableMap.of(
           METASTORE_URIS,
-          ConfVars.METASTOREURIS.varname,
-          PRINCIPAL,
-          ConfVars.METASTORE_KERBEROS_PRINCIPAL.varname);
+          ConfVars.METASTOREURIS.varname);
 
   /**
    * Initializes the Hive catalog operations with the provided configuration.
