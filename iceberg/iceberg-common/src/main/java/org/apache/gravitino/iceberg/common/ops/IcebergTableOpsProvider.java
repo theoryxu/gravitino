@@ -24,7 +24,7 @@ import java.util.Map;
  * IcebergTableOpsProvider is an interface defining how Iceberg REST catalog server gets iceberg
  * catalogs.
  */
-public interface IcebergTableOpsProvider {
+public interface IcebergTableOpsProvider extends AutoCloseable {
 
   /** @param properties The configuration parameters for creating Provider. */
   void initialize(Map<String, String> properties);

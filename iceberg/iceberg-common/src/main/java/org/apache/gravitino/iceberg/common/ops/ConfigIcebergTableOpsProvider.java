@@ -83,4 +83,7 @@ public class ConfigIcebergTableOpsProvider implements IcebergTableOpsProvider {
     }
     return new IcebergConfig(base);
   }
+
+  @Override
+  public void close() throws Exception {}
 }

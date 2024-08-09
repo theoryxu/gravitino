@@ -45,7 +45,7 @@ public class TestConfigIcebergTableOpsProvider {
   }
 
   @ParameterizedTest
-  @ValueSource(strings = {"hello", "\\\n\t\\\'", "\u0024", "\100", "[_~"})
+  @ValueSource(strings = {"not_match", "\\\n\t\\\'", "\u0024", "\100", "[_~"})
   public void testInvalidIcebergTableOps(String prefix) {
     ConfigIcebergTableOpsProvider provider = new ConfigIcebergTableOpsProvider();
     provider.initialize(Maps.newHashMap());

@@ -85,5 +85,6 @@ public class IcebergTableOpsManager implements AutoCloseable {
   @Override
   public void close() throws Exception {
     icebergTableOpsCache.invalidateAll();
+    provider.close();
   }
 }

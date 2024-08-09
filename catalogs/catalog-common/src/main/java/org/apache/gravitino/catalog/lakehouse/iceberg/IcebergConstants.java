@@ -65,4 +65,5 @@ public class IcebergConstants {
   public static final String GRAVITINO_ICEBERG_REST_SERVICE_NAME = "iceberg-rest";
 
   public static final String ICEBERG_REST_CATALOG_PROVIDER = "catalog-provider-impl";
+  public static final String GRAVITINO_SERVER_URI = "gravitino-server-uri";
 }

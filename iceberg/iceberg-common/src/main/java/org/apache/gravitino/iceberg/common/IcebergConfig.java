@@ -167,6 +167,13 @@ public class IcebergConfig extends Config implements OverwriteDefaultConfig {
           .createWithDefault(
               "org.apache.gravitino.iceberg.common.ops.ConfigIcebergTableOpsProvider");
 
+  public static final ConfigEntry<String> GRAVITINO_SERVER_URI =
+      new ConfigBuilder(IcebergConstants.GRAVITINO_SERVER_URI)
+          .doc("The gravitino server uri for GravitinoIcebergTableOpsProvider")
+          .version(ConfigConstants.VERSION_0_6_0)
+          .stringConf()
+          .create();
+
   public String getJdbcDriver() {
     return get(JDBC_DRIVER);
   }
